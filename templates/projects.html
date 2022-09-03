@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Darshan projectdetails</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assetsvendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Knight - v4.8.0
+  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<nav id="navbar" class="navbar">
+    <ul>
+      <li><a class="nav-link scrollto active" href="/hero">Home</a></li>
+      <li><a class="nav-link scrollto" href="/about">About Me</a></li>
+      <li><a class="nav-link scrollto" href="/resume">Resume</a></li>
+      <li><a class="nav-link scrollto " href="/projects">Projects</a></li>
+      
+      <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
+      {% if not request.user.is_authenticated %}
+
+        <li><a class="nav-link" href="/signup">Signin</a></li>
+        {% else %}
+        <li><a class="nav-link" href="/logout">Logout</a></li>
+        
+
+         {% endif %}
+    </ul>
+    <i class="bi bi-list mobile-nav-toggle"></i>
+  </nav><!-- .navbar -->
+
+</div>
+</header><!-- End Header -->
+
+<main id="main">
+
+ <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>My Projects</h2>
+        
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Web Application</li>
+              <li data-filter=".filter-web">Android App</li>
+              <li data-filter=".filter-card">Computer Graphics</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/covid.png" class="img-fluid" alt="">
+
+                
+            
+              <div class="portfolio-info">
+                
+                <p>Web Application</p>
+                <div class="portfolio-links">
+                  <a href="static/assets/img/portfolio/covid.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  
+                  <a href="/projectdetails" title="projectdetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/noteapp.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+              
+                <p>Android App</p>
+                <div class="portfolio-links">
+                  <a href="static/assets/img/portfolio/noteapp.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="/projectdetails" title="projectdetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="static/assets/img/portfolio/snake2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                
+                <p>Computer Graphics</p>
+                <div class="portfolio-links">
+                  <a href="static/assets/img/portfolio/snake2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title=""><i class="bx bx-plus"></i></a>
+                  <a href="/projectdetails" title="projectdetails"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+     
+   <!-- Vendor JS Files -->
+ <script src="static/assets/vendor/aos/aos.js"></script>
+ <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+ <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+ <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+ <!-- Template Main JS File -->
+ <script src="static/assets/js/main.js"></script> 
+  
+      

@@ -1,0 +1,218 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Darshan portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assetsvendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Knight - v4.8.0
+  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<nav id="navbar" class="navbar">
+    <ul>
+      <li><a class="nav-link scrollto active" href="/hero">Home</a></li>
+      <li><a class="nav-link scrollto" href="/about">About Me</a></li>
+      <li><a class="nav-link scrollto" href="/resume">Resume</a></li>
+      <li><a class="nav-link scrollto " href="/projects">Projects</a></li>
+      
+      <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
+      {% if not request.user.is_authenticated %}
+
+        <li><a class="nav-link" href="/signup">Signin</a></li>
+        {% else %}
+        <li><a class="nav-link" href="/logout">Logout</a></li>
+        
+
+         {% endif %}
+    </ul>
+    <i class="bi bi-list mobile-nav-toggle"></i>
+  </nav><!-- .navbar -->
+
+</div>
+</header><!-- End Header -->
+
+<main id="main">
+
+
+<section id="resume" class="resume">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+        <p>Check My Resume</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h3 class="resume-title">Sumary</h3>
+          <div class="resume-item pb-0">
+            <h4>Darshan </h4>
+            
+            <p>
+            <ul>
+              <li>Madikeri,Kodagu,Karnataka,IN 571251</li>
+              <li>+91 7348936601</li>
+              <li>morkandadarshan@gmail.com</li>
+            </ul>
+            </p>
+          </div>
+
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>BE(Computer Science)</h4>
+            <h5>August 2019 - Present</h5>
+            <p><em>Shree Devi Institute Of Technology, Manglore</em></p>
+          
+          </div>
+          <div class="resume-item">
+            <h4>Pre-University</h4>
+            <h5>2017 June - 2019 March</h5>
+            <p><em>St Micheals PU College, Madikeri, Kodagu</em></p>
+          </div>
+
+          <div class="resume-item">
+            <h4>High School</h4>
+            <h5>2016 June - 2017 April</h5>
+            <p><em>St Micheal High Schhol, Madikeri, Kodagu</em></p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="resume-title">External Skills</h3>
+            <p>
+            <ul>
+              <li>Photography</li>
+              <li>Photoshop</li>
+              <li>Editing</li>
+              <li>Document writer</li>
+            </ul>
+            </p>
+            <br>
+            <h4 class="resume-title">Hobbies</h4>
+            <p>
+            <ul>
+              <li>Reading books</li>
+              <li>Running</li>
+              <li>Listnening to music</li>
+              <li>Cycling</li>
+            </ul>
+            </p>
+
+            <h4 class="resume-title">Languages Known</h4>
+            <p>
+            <ul>
+              <li>English</li>
+              <li>Hindhi</li>
+              <li>Kannada</li>
+              <li>Tamil</li>
+            </ul>
+            </p>
+          
+  
+          </div>
+          
+            
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Resume Section -->
+
+  <!-- ======= Skills Section ======= -->
+<section id="skills" class="skills section-bg">
+<div class="container">
+
+  <div class="section-title">
+    <h2>Software Skills</h2>
+    <br>
+  </div>
+
+  <div class="skill-bars">
+    <div class="bar">
+      <div class="info">
+        <span>HTML</span>
+      </div>
+      <div class="progress-line html">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>CSS</span>
+      </div>
+      <div class="progress-line css">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>c/c++</span>
+      </div>
+      <div class="progress-line jquery">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>Python</span>
+      </div>
+      <div class="progress-line python">
+        <span></span>
+      </div>
+    </div>
+    <div class="bar">
+      <div class="info">
+        <span>java</span>
+      </div>
+      <div class="progress-line mysql">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+</section><!-- End Skills Section -->
+
+<!-- Vendor JS Files -->
+<script src="static/assets/vendor/aos/aos.js"></script>
+<script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="static/assets/js/main.js"></script>

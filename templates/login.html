@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Darshan portfolio signin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assetsvendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Knight - v4.8.0
+  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+  <nav id="navbar" class="navbar">
+    <ul>
+      <li><a class="nav-link active" href="/hero">Home</a></li>
+      <li><a class="nav-link" href="/about">About</a></li>
+      <li><a class="nav-link" href="/resume">Resume</a></li>
+      
+      <li><a class="nav-link" href="/projects">Projects</a></li>
+      <li><a class="nav-link" href="/contact">Contact</a></li>
+    </ul>
+    <i class="bi bi-list mobile-nav-toggle"></i>
+  </nav><!-- .navbar -->
+
+  <section id="hero">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="section-title" data-aos="fade-up">
+    <h1>Login Here</h1>
+
+
+    <div class="hero-container">
+    
+        <div class="row">
+        
+        <div class="col-md-8"> </div>
+        
+        <div class="col-md-16">
+        
+            {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+      <strong></strong> {{message}}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endfor %}
+    
+    
+    <form action="/login" method="post">{% csrf_token %}
+    
+        <div class="form-group">
+            <input type="number" class="form-control mb-2" name="usernumber" placeholder="Phone Number" required>
+            </div>
+
+
+   
+    
+    
+    <div class="form-group">
+    <input type="password" class="form-control mt-2" name="pass1" placeholder="Password" required>
+    </div>
+    
+   
+    <br>
+    
+    
+    <div class="d-grid gap-2">
+      <button class="btn btn-light" type="submit">Login</button>
+    
+    </div>
+    
+    </form>
+    <br><a href="/signin">New User?</a>
+    
+    
+    </div>
+    
+    <div class="col-md-3"></div>
+    
+    </div>
+    
+    
+    
+    </div>
+
+
+
+

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Darshan projectdetails</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Vendor JS Files -->
+  <script src="static/assets/vendor/vendor/purecounter/purecounter.js"></script>
+  <script src="static/assets/vendor/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets/vendor/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets/vendor/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets/vendor/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="static/assets/vendor/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets/css/style.css" rel="stylesheet">
+  
+  <!-- =======================================================
+  * Template Name: Knight - v4.8.0
+  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<nav id="navbar" class="navbar">
+    <ul>
+      <li><a class="nav-link scrollto active" href="/hero">Home</a></li>
+      <li><a class="nav-link scrollto" href="/about">About Me</a></li>
+      <li><a class="nav-link scrollto" href="/resume">Resume</a></li>
+      <li><a class="nav-link scrollto " href="/projects">Projects</a></li>
+      
+      <li><a class="nav-link scrollto" href="/contact">Contact</a></li>
+      {% if not request.user.is_authenticated %}
+
+        <li><a class="nav-link" href="/signup">Signin</a></li>
+        {% else %}
+        <li><a class="nav-link" href="/logout">Logout</a></li>
+        
+
+         {% endif %}
+    </ul>
+    <i class="bi bi-list mobile-nav-toggle"></i>
+  </nav><!-- .navbar -->
+
+</div>
+</header><!-- End Header -->
+
+<main id="main">
+<!-- ======= Portfolio Details Section ======= -->
+<section id="projectdetails" class="projectdetails">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-8">
+        <div class="projectdetails-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+           
+            <div class="swiper-slide">
+              <img src="static/assets/img/portfolio/covid.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="static/assets/img/portfolio/covid2.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="static/assets/img/portfolio/covid3.png" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="portfolio-info">
+          <h3>Covid Bedslot Booking System</h3>
+          <ul>
+            <li><strong>Category</strong>: Web Application</li>
+            <li><strong>Language</strong>: Python, HTML,CSS,JS,MySql Database</li>
+            {% if not request.user.is_authenticated %}
+            <li><strong>Project URL</strong>: <a href="/signup">Signin for Code </a></li>
+            {% else %}
+            <li><strong>Project URL</strong>: <a href="https://github.com/darshanmb7096/Covid-Bedslot-Booking-System">github.com/covid bdslt bkng sytm</a></li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="portfolio-description">
+          <h2>More Details:</h2>
+          <p>
+            A fully functioning web application which contains 3 login sections patients, hospital staff and admin.The patients can choose hospitals and
+            select the type of bed they need and book it and they can also check details about booking. where the hospital staff can update hospital details like adding hospitals and availability of beds.The admin can add hospital users.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Portfolio Details Section -->
+
+<!-- ======= Portfolio Details Section ======= -->
+<section id="projectdetails" class="projectdetails">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-8">
+        <div class="projectdetails-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+           
+            <div class="swiper-slide">
+              <img src="static/assets/img/portfolio/noteapp.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="static/assets/img/portfolio/noteapp2.png" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="static/assets/img/portfolio/noteapp3.png" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="portfolio-info">
+          <h3>Note Application</h3>
+          <ul>
+            <li><strong>Category</strong>: Android App</li>
+            <li><strong>Language</strong>: Java</li>
+            {% if not request.user.is_authenticated %}
+            <li><strong>Project URL</strong>: <a href="/signup">Signin for Code </a></li>
+            {% else %}
+            <li><strong>Project URL</strong>: <a href="https://github.com/darshanmb7096/Note-Application">github.com/Note application</a></li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="portfolio-description">
+          <h2>More Details:</h2>
+          <p>
+            A Simple note taking Application Designed using android studio, Using xml the front end is designed and java for backend. we can add new note and delete it whenever we want
+            whenever a new note is added it will be saved in the database, the realm-database does this storing. i've built it simple and user friendly .
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Portfolio Details Section -->
+
+<!-- ======= Portfolio Details Section ======= -->
+<section id="projectdetails" class="projectdetails">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-8">
+        <div class="projectdetails-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+           
+            <div class="swiper-slide">
+              <img src="static/assets/img/portfolio/snake.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="static/assets/img/portfolio/snake2.jpg" alt="">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="static/assets/img/portfolio/snake3.jpg" alt="">
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="portfolio-info">
+          <h3>Snake Xania</h3>
+          <ul>
+            <li><strong>Category</strong>: Computer Graphics Game</li>
+            <li><strong>Language</strong>: C#</li>
+            <li><strong>Project date</strong>: 20 ,June 2022</li>
+            {% if not request.user.is_authenticated %}
+            <li><strong>Project URL</strong>: <a href="/signup">Signin for Code </a></li>
+            {% else %}
+            <li><strong>Project URL</strong>: <a href="https://github.com/darshanmb7096/Snake-xania-game">github.com/Snake-xania-game</a></li>
+            {% endif %}
+          </ul>
+        </div>
+        <div class="portfolio-description">
+          <h2>More Details:</h2>
+          <p>
+            Snake Xania commonly Called snake game which is a vintage game, We designed this game using visual studio code. We can start the game using any of the arrow keys and the game got 
+            3 lifelines Score and level will be saved when gaming. whenever a life is lost the game is paused and we can resume the game to last state by pressing the key c after alll lifelines
+            final score will be displayed and by pressing the key s we can restart the game. We have designed it ver simple and easy.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Portfolio Details Section -->
+
+ <!-- Vendor JS Files -->
+
+ <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ <script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+ <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+ <script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+ <script src="static/assets/vendor/php-email-form/validate.js"></script>
+
+ <!-- Template Main JS File -->
+ <script src="static/assets/js/main.js"></script>
